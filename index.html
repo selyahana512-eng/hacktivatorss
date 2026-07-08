@@ -265,6 +265,26 @@
 
     /* ========= TEAM ========= */
     #team { padding-top: 80px; padding-bottom: 100px; }
+    .team-subsection { margin-top: 64px; }
+    .team-subsection:first-of-type { margin-top: 0; }
+    .team-subsection-header {
+      display: flex; align-items: baseline; gap: 16px;
+      margin-bottom: 28px; padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    .team-subsection-tag {
+      font-family: 'Share Tech Mono', monospace; font-size: 0.75rem;
+      letter-spacing: 3px; color: var(--accent);
+      text-shadow: 0 0 10px rgba(0,255,231,0.4);
+    }
+    .team-subsection-title {
+      font-family: 'Bebas Neue', sans-serif; font-size: clamp(1.4rem, 2.5vw, 2rem);
+      letter-spacing: 2px; color: #fff;
+    }
+    .team-subsection-sub {
+      font-family: 'Share Tech Mono', monospace; font-size: 0.65rem;
+      letter-spacing: 1px; color: var(--muted); margin-left: auto; text-transform: uppercase;
+    }
     .team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 24px; }
     .member-card {
       background: var(--surface); border: 1px solid var(--border);
@@ -686,7 +706,7 @@
 
   <!-- STATS BAR -->
   <div class="stats-bar">
-    <div class="stat-item"><div class="stat-value">12</div><div class="stat-label">Team Members</div></div>
+    <div class="stat-item"><div class="stat-value">21</div><div class="stat-label">Team Members</div></div>
     <div class="stat-item"><div class="stat-value">∞</div><div class="stat-label">Projects Created</div></div>
     <div class="stat-item"><div class="stat-value">100+</div><div class="stat-label">Students Trained</div></div>
     <div class="stat-item"><div class="stat-value">2026</div><div class="stat-label">Year Founded</div></div>
@@ -726,179 +746,380 @@
   <section id="team">
     <div class="section-label">The Crew</div>
     <h2 class="section-title">Meet the <span>Team</span></h2>
-    <div class="team-grid">
 
-      <div class="member-card" data-member="celia">
-        <div class="member-avatar"><img src="celia.jpeg" alt="Celia Ahmed" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div class="member-info">
-          <div class="member-name">Celia Ahmed</div>
-          <div class="member-role">Leader of the Team</div>
-          <div class="member-skills">
-            <span class="skill-tag">Leadership</span>
-            <span class="skill-tag">Strategy</span>
-            <span class="skill-tag">Development</span>
-          </div>
-        </div>
-        <div class="click-hint">VIEW PROFILE →</div>
+    <!-- ===== CORE TEAM ===== -->
+    <div class="team-subsection">
+      <div class="team-subsection-header">
+        <span class="team-subsection-tag">01</span>
+        <h3 class="team-subsection-title">Core Team</h3>
+        <span class="team-subsection-sub">Leadership</span>
       </div>
+      <div class="team-grid">
 
-      <div class="member-card" data-member="aycel">
-        <div class="member-avatar"><img src="aycel.jpeg" alt="Aycel Ahmed" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div class="member-info">
-          <div class="member-name">Aycel Ahmed</div>
-          <div class="member-role">Co-Leader of the Team</div>
-          <div class="member-skills">
-            <span class="skill-tag">Coordination</span>
-            <span class="skill-tag">Planning</span>
-            <span class="skill-tag">Support</span>
+        <div class="member-card" data-member="celia">
+          <div class="member-avatar"><img src="celia.jpeg" alt="Celia Ahmed" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Celia Ahmed</div>
+            <div class="member-role">Leader of the Team</div>
+            <div class="member-skills">
+              <span class="skill-tag">Leadership</span>
+              <span class="skill-tag">Strategy</span>
+              <span class="skill-tag">Development</span>
+            </div>
           </div>
+          <div class="click-hint">VIEW PROFILE →</div>
         </div>
-        <div class="click-hint">VIEW PROFILE →</div>
-      </div>
 
-      <div class="member-card" data-member="omar">
-        <div class="member-avatar"><img src="omar1.jpeg" alt="Omar Mohamed" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div class="member-info">
-          <div class="member-name">Omar Mohamed</div>
-          <div class="member-role">General Manager</div>
-          <div class="member-skills">
-            <span class="skill-tag">Strategy</span>
-            <span class="skill-tag">Planning</span>
-            <span class="skill-tag">Coordination</span>
+        <div class="member-card" data-member="aycel">
+          <div class="member-avatar"><img src="aycel.jpeg" alt="Aycel Ahmed" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Aycel Ahmed</div>
+            <div class="member-role">Co-Leader of the Team</div>
+            <div class="member-skills">
+              <span class="skill-tag">Coordination</span>
+              <span class="skill-tag">Planning</span>
+              <span class="skill-tag">Support</span>
+            </div>
           </div>
+          <div class="click-hint">VIEW PROFILE →</div>
         </div>
-        <div class="click-hint">VIEW PROFILE →</div>
-      </div>
 
-      <div class="member-card" data-member="ghazal">
-        <div class="member-avatar"><img src="ghazal.jpeg" alt="Ghazal Helmy" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div class="member-info">
-          <div class="member-name">Ghazal Helmy</div>
-          <div class="member-role">Media Team Leader</div>
-          <div class="member-skills">
-            <span class="skill-tag">Video</span>
-            <span class="skill-tag">Graphics</span>
-            <span class="skill-tag">Content</span>
+        <div class="member-card" data-member="omar">
+          <div class="member-avatar"><img src="omar1.jpeg" alt="Omar Mohamed" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Omar Mohamed</div>
+            <div class="member-role">General Manager</div>
+            <div class="member-skills">
+              <span class="skill-tag">Strategy</span>
+              <span class="skill-tag">Planning</span>
+              <span class="skill-tag">Coordination</span>
+            </div>
           </div>
+          <div class="click-hint">VIEW PROFILE →</div>
         </div>
-        <div class="click-hint">VIEW PROFILE →</div>
-      </div>
 
-      <div class="member-card" data-member="eyad">
-        <div class="member-avatar"><img src="eyad2.jpeg" alt="Eyad Ahmed" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div class="member-info">
-          <div class="member-name">Eyad Ahmed</div>
-          <div class="member-role">Programming Team Leader</div>
-          <div class="member-skills">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">HTML</span>
-            <span class="skill-tag">JS</span>
-            <span class="skill-tag">CSS</span>
-          </div>
-        </div>
-        <div class="click-hint">VIEW PROFILE →</div>
       </div>
-      <div class="member-card" data-member="salmaH">
-        <div class="member-avatar"><img src="salmaH.jpeg" alt="Salma El-Hady" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div class="member-info">
-          <div class="member-name">Salma El-Hady</div>
-          <div class="member-role">Training And Content Creation Team Leader</div>
-          <div class="member-skills">
-            <span class="skill-tag">Frontend</span>
-            <span class="skill-tag">CSS</span>
-            <span class="skill-tag">UX</span>
-          </div>
-        </div>
-        <div class="click-hint">VIEW PROFILE →</div>
-      </div>
-
-      <div class="member-card" data-member="sama">
-        <div class="member-avatar"><img src="sama.jpeg" alt="Sama Ahmed" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div class="member-info">
-          <div class="member-name">Sama Ahmed</div>
-          <div class="member-role">Media Team Co-Leader</div>
-          <div class="member-skills">
-            <span class="skill-tag">Graphics</span>
-            <span class="skill-tag">Animation</span>
-            <span class="skill-tag">Content</span>
-          </div>
-        </div>
-        <div class="click-hint">VIEW PROFILE →</div>
-      </div>
-
-      <div class="member-card" data-member="salwa">
-        <div class="member-avatar"><img src="salwa.jpeg" alt="Salwa Mohamed" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div class="member-info">
-          <div class="member-name">Salwa Mohamed</div>
-          <div class="member-role">Programming Team Member</div>
-          <div class="member-skills">
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">Database</span>
-          </div>
-        </div>
-        <div class="click-hint">VIEW PROFILE →</div>
-      </div>
-
-      <div class="member-card" data-member="yassin">
-        <div class="member-avatar"><img src="yassin.jpeg" alt="Yassin Mohamed" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div class="member-info">
-          <div class="member-name">Yassin Mohamed</div>
-          <div class="member-role">Programming Team Member</div>
-          <div class="member-skills">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Data</span>
-            <span class="skill-tag">Automation</span>
-          </div>
-        </div>
-        <div class="click-hint">VIEW PROFILE →</div>
-      </div>
-
-      
-
-      <div class="member-card" data-member="logien">
-        <div class="member-avatar"><img src="logien.jpeg" alt="Logien Mohamed" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div class="member-info">
-          <div class="member-name">Logien Mohamed</div>
-          <div class="member-role">Media Team Member</div>
-          <div class="member-skills">
-            <span class="skill-tag">Video Editing</span>
-            <span class="skill-tag">Animation</span>
-            <span class="skill-tag">Production</span>
-          </div>
-        </div>
-        <div class="click-hint">VIEW PROFILE →</div>
-      </div>
-
-      <div class="member-card" data-member="salmaE">
-        <div class="member-avatar"><img src="salmaE.jpeg" alt="Salma Emad" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div class="member-info">
-          <div class="member-name">Salma Emad</div>
-          <div class="member-role">Media Team Member</div>
-          <div class="member-skills">
-            <span class="skill-tag">Graphics</span>
-            <span class="skill-tag">Social Media</span>
-            <span class="skill-tag">Branding</span>
-          </div>
-        </div>
-        <div class="click-hint">VIEW PROFILE →</div>
-      </div>
-
-      <div class="member-card" data-member="hamza">
-        <div class="member-avatar"><img src="hamza.jpeg" alt="Hamza Ahmed" style="width:100%;height:100%;object-fit:cover;"></div>
-        <div class="member-info">
-          <div class="member-name">Hamza Ahmed</div>
-          <div class="member-role">Design Team Member</div>
-          <div class="member-skills">
-            <span class="skill-tag">Canva</span>
-            <span class="skill-tag">Video Editing</span>
-            <span class="skill-tag">Animation</span>
-          </div>
-        </div>
-        <div class="click-hint">VIEW PROFILE →</div>
-      </div>
-
     </div>
+
+    <!-- ===== MAIN TEAM ===== -->
+    <div class="team-subsection">
+      <div class="team-subsection-header">
+        <span class="team-subsection-tag">02</span>
+        <h3 class="team-subsection-title">Main Team</h3>
+        <span class="team-subsection-sub">Programming · Media · Design · Training</span>
+      </div>
+      <div class="team-grid">
+
+        <div class="member-card" data-member="eyad">
+          <div class="member-avatar"><img src="eyad2.jpeg" alt="Eyad Ahmed" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Eyad Ahmed</div>
+            <div class="member-role">Programming Team Leader</div>
+            <div class="member-skills">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">JS</span>
+              <span class="skill-tag">CSS</span>
+            </div>
+          </div>
+          <div class="click-hint">VIEW PROFILE →</div>
+        </div>
+
+        <div class="member-card" data-member="ghazal">
+          <div class="member-avatar"><img src="ghazal.jpeg" alt="Ghazal Helmy" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Ghazal Helmy</div>
+            <div class="member-role">Media Team Leader</div>
+            <div class="member-skills">
+              <span class="skill-tag">Video</span>
+              <span class="skill-tag">Graphics</span>
+              <span class="skill-tag">Content</span>
+            </div>
+          </div>
+          <div class="click-hint">VIEW PROFILE →</div>
+        </div>
+
+        <div class="member-card" data-member="sama">
+          <div class="member-avatar"><img src="sama.jpeg" alt="Sama Ahmed" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Sama Ahmed</div>
+            <div class="member-role">Media Team Co-Leader</div>
+            <div class="member-skills">
+              <span class="skill-tag">Graphics</span>
+              <span class="skill-tag">Animation</span>
+              <span class="skill-tag">Content</span>
+            </div>
+          </div>
+          <div class="click-hint">VIEW PROFILE →</div>
+        </div>
+        <div class="member-card" data-member="salmaH">
+          <div class="member-avatar"><img src="salmaH.jpeg" alt="Salma El-Hady" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Salma El-Hady</div>
+            <div class="member-role">Training And Content Creation Team Leader</div>
+            <div class="member-skills">
+              <span class="skill-tag">Frontend</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">UX</span>
+            </div>
+          </div>
+          <div class="click-hint">VIEW PROFILE →</div>
+        </div>
+
+        <div class="member-card" data-member="hana">
+          <div class="member-avatar"><img src="hana.jpeg" alt="Hana Ahmed" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Hana Ahmed</div>
+            <div class="member-role">Design Team Member</div>
+            <div class="member-skills">
+              <span class="skill-tag">Design</span>
+              <span class="skill-tag">Canva</span>
+              <span class="skill-tag">Visual Identity</span>
+            </div>
+          </div>
+          <div class="click-hint">VIEW PROFILE →</div>
+        </div>
+
+        <div class="member-card" data-member="hamza">
+          <div class="member-avatar"><img src="hamza.jpeg" alt="Hamza Ahmed" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Hamza Ahmed</div>
+            <div class="member-role">Design Team Member</div>
+            <div class="member-skills">
+              <span class="skill-tag">Canva</span>
+              <span class="skill-tag">Video Editing</span>
+              <span class="skill-tag">Animation</span>
+            </div>
+          </div>
+          <div class="click-hint">VIEW PROFILE →</div>
+        </div>
+
+        <div class="member-card" data-member="yassin">
+          <div class="member-avatar"><img src="yassin.jpeg" alt="Yassin Mohamed" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Yassin Mohamed</div>
+            <div class="member-role">Programming Team Member</div>
+            <div class="member-skills">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Data</span>
+              <span class="skill-tag">Automation</span>
+            </div>
+          </div>
+          <div class="click-hint">VIEW PROFILE →</div>
+        </div>
+
+        <div class="member-card" data-member="salwa">
+          <div class="member-avatar"><img src="salwa.jpeg" alt="Salwa Mohamed" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Salwa Mohamed</div>
+            <div class="member-role">Programming Team Member</div>
+            <div class="member-skills">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Database</span>
+            </div>
+          </div>
+          <div class="click-hint">VIEW PROFILE →</div>
+        </div>
+
+        
+
+        <div class="member-card" data-member="salmaE">
+          <div class="member-avatar"><img src="salmaE.jpeg" alt="Salma Emad" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Salma Emad</div>
+            <div class="member-role">Media Team Member</div>
+            <div class="member-skills">
+              <span class="skill-tag">Graphics</span>
+              <span class="skill-tag">Social Media</span>
+              <span class="skill-tag">Branding</span>
+            </div>
+          </div>
+          <div class="click-hint">VIEW PROFILE →</div>
+        </div>
+
+        <div class="member-card" data-member="logien">
+          <div class="member-avatar"><img src="logien.jpeg" alt="Logien Mohamed" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Logien Mohamed</div>
+            <div class="member-role">Media Team Member</div>
+            <div class="member-skills">
+              <span class="skill-tag">Video Editing</span>
+              <span class="skill-tag">Animation</span>
+              <span class="skill-tag">Production</span>
+            </div>
+          </div>
+          <div class="click-hint">VIEW PROFILE →</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===== SECOND GENERATION TEAM ===== -->
+    <div class="team-subsection">
+      <div class="team-subsection-header">
+        <span class="team-subsection-tag">03</span>
+        <h3 class="team-subsection-title">Second Generation Team</h3>
+        <span class="team-subsection-sub">The Next To Lead</span>
+      </div>
+      <div class="team-grid">
+
+        <div class="member-card" data-member="rahma">
+          <div class="member-avatar"><img src="rahma.jpeg" alt="Rahma Reda" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Rahma Reda</div>
+            <div class="member-role">Leader of the Team</div>
+            <div class="member-skills">
+              <span class="skill-tag">Leadership</span>
+              <span class="skill-tag">Coordination</span>
+              <span class="skill-tag">Planning</span>
+            </div>
+          </div>
+          <div class="click-hint">VIEW PROFILE →</div>
+        </div>
+
+        <div class="member-card" data-member="hana">
+          <div class="member-avatar"><img src="hana.jpeg" alt="Hana Ahmed" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Hana Ahmed</div>
+            <div class="member-role">Design Team Leader</div>
+            <div class="member-skills">
+              <span class="skill-tag">Design</span>
+              <span class="skill-tag">Leadership</span>
+              <span class="skill-tag">Mentoring</span>
+            </div>
+          </div>
+          <div class="click-hint">VIEW PROFILE →</div>
+        </div>
+
+        <div class="member-card" data-member="yassin">
+          <div class="member-avatar"><img src="yassin.jpeg" alt="Yassin Mohamed" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Yassin Mohamed</div>
+            <div class="member-role">Programming Team Leader</div>
+            <div class="member-skills">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Leadership</span>
+              <span class="skill-tag">Automation</span>
+            </div>
+          </div>
+          <div class="click-hint">VIEW PROFILE →</div>
+        </div>
+
+        <div class="member-card" data-member="dina">
+          <div class="member-avatar"><img src="dina.jpeg" alt="Dina Abdullah" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Dina Abdullah</div>
+            <div class="member-role">Design Team Member</div>
+            <div class="member-skills">
+              <span class="skill-tag">Design</span>
+              <span class="skill-tag">Canva</span>
+              <span class="skill-tag">Creativity</span>
+            </div>
+          </div>
+          <div class="click-hint">VIEW PROFILE →</div>
+        </div>
+
+        <div class="member-card" data-member="adam">
+          <div class="member-avatar"><img src="adam.jpeg" alt="Adam Hussein" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Adam Hussein</div>
+            <div class="member-role">Design Team Member</div>
+            <div class="member-skills">
+              <span class="skill-tag">Design</span>
+              <span class="skill-tag">Canva</span>
+              <span class="skill-tag">Creativity</span>
+            </div>
+          </div>
+          <div class="click-hint">VIEW PROFILE →</div>
+        </div>
+
+        <div class="member-card" data-member="ibrahim">
+          <div class="member-avatar"><img src="ibrahim.jpeg" alt="Ibrahim Yasser" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Ibrahim Yasser</div>
+            <div class="member-role">Design Team Member</div>
+            <div class="member-skills">
+              <span class="skill-tag">Design</span>
+              <span class="skill-tag">Canva</span>
+              <span class="skill-tag">Creativity</span>
+            </div>
+          </div>
+          <div class="click-hint">VIEW PROFILE →</div>
+        </div>
+
+        <div class="member-card" data-member="mawadda">
+          <div class="member-avatar"><img src="mawadda.jpeg" alt="Mawadda Sherif" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Mawadda Sherif</div>
+            <div class="member-role">Design Team Member</div>
+            <div class="member-skills">
+              <span class="skill-tag">Design</span>
+              <span class="skill-tag">Canva</span>
+              <span class="skill-tag">Creativity</span>
+            </div>
+          </div>
+          <div class="click-hint">VIEW PROFILE →</div>
+        </div>
+
+        <div class="member-card" data-member="tala">
+          <div class="member-avatar"><img src="tala.jpeg" alt="Tala Ahmed" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Tala Ahmed</div>
+            <div class="member-role">Media & Programming Team Member</div>
+            <div class="member-skills">
+              <span class="skill-tag">Media</span>
+              <span class="skill-tag">Content</span>
+              <span class="skill-tag">Programming</span>
+            </div>
+          </div>
+          <div class="click-hint">VIEW PROFILE →</div>
+        </div>
+
+        <div class="member-card" data-member="youssef">
+          <div class="member-avatar"><img src="youssef.jpeg" alt="Youssef Abdullah" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Youssef Abdullah</div>
+            <div class="member-role">Programming & Training Team Member</div>
+            <div class="member-skills">
+              <span class="skill-tag">Programming</span>
+              <span class="skill-tag">Training</span>
+              <span class="skill-tag">Content Creation</span>
+            </div>
+          </div>
+          <div class="click-hint">VIEW PROFILE →</div>
+        </div>
+
+        <div class="member-card" data-member="hamza">
+          <div class="member-avatar"><img src="hamza.jpeg" alt="Hamza Ahmed" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Hamza Ahmed</div>
+            <div class="member-role">Design Team Member</div>
+            <div class="member-skills">
+              <span class="skill-tag">Canva</span>
+              <span class="skill-tag">Video Editing</span>
+              <span class="skill-tag">Animation</span>
+            </div>
+          </div>
+          <div class="click-hint">VIEW PROFILE →</div>
+        </div>
+        <div class="member-card" data-member="renad">
+          <div class="member-avatar"><img src="renad.jpeg" alt="Renad Mohamed" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="member-info">
+            <div class="member-name">Renad Mohamed</div>
+            <div class="member-role">Programming Team Member</div>
+            <div class="member-skills">
+              <span class="skill-tag">Programming</span>
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">Automation</span>
+            </div>
+          </div>
+          <div class="click-hint">VIEW PROFILE →</div>
+        </div>
+
+      </div>
+    </div>
+
   </section>
 
   <div class="divider"></div>
@@ -1189,7 +1410,7 @@
       yassin: {
         id: 'HKT-008',
         name: 'Yassin Mohamed',
-        role: 'Programming And Management Team Member and Training & Content Creation Team Member',
+        role: 'Programming And Management Team Member and Training & Content Creation Team Member (Main Team) and Programming And Management Team Leader And Training And Content Creation Team Member (Second Generation Team)',
         photo: 'yassin.jpeg',
         status: 'Active · Developer',
         bio: `Yassin specializes in Python-based solutions, data processing, and automation. He builds scripts and tools that streamline workflows for the team and contributes to data-driven projects with precision.`,
@@ -1269,7 +1490,7 @@
       hamza: {
         id: 'HKT-012',
         name: 'Hamza Ahmed',
-        role: 'Design And Montage Team Member',
+        role: 'Design And Montage Team Member (Main Team And Second Generation Team)',
         photo: 'hamza.jpeg',
         status: 'Active · Design',
         bio: `Hamza combines design intuition with video editing skills to produce polished visual content. He works with Canva and animation tools to craft presentations, social posts, and video content that represents the team's creative vision.`,
@@ -1283,6 +1504,179 @@
           { label: 'Department', value: 'Design' },
           { label: 'Since', value: '2026' },
           { label: 'Focus', value: 'Visual Design & Video' },
+          { label: 'Status', value: 'Active' },
+        ]
+      },
+      hana: {
+        id: 'HKT-013',
+        name: 'Hana Ahmed',
+        role: 'Design And Montage Team Member and Training And Content Creation Team Member (Main Team) & Design And Montage Team Leader and Training And Content Creation Team Member (Second Generation Team)',
+        photo: 'hana.jpeg',
+        status: 'Active · Design',
+        bio: `Hana brings a sharp eye for visual design to HACKTIVATORS, contributing to the main design team while also stepping up to lead the design track for the Second Generation Team — mentoring younger members and shaping the next wave of creative talent.`,
+        skills: ['Design', 'Canva', 'Mentoring', 'Visual Identity', 'Leadership'],
+        skillBars: [
+          { label: 'Design', value: 85 },
+          { label: 'Mentoring', value: 78 },
+          { label: 'Visual Identity', value: 82 },
+        ],
+        meta: [
+          { label: 'Department', value: 'Design' },
+          { label: 'Since', value: '2026' },
+          { label: 'Focus', value: 'Design & Mentorship' },
+          { label: 'Status', value: 'Active' },
+        ]
+      },
+      rahma: {
+        id: 'HKT-014',
+        name: 'Rahma Reda',
+        role: 'Leader of the Second Generation Team',
+        photo: 'rahma.jpeg',
+        status: 'Active · Next-Gen Lead',
+        bio: `Rahma leads the Second Generation Team, the group of younger members being prepared to carry HACKTIVATORS forward. She focuses on building leadership skills within the team and coordinating across its design, programming, media, and training tracks.`,
+        skills: ['Leadership', 'Coordination', 'Mentoring', 'Planning'],
+        skillBars: [
+          { label: 'Leadership', value: 85 },
+          { label: 'Coordination', value: 80 },
+          { label: 'Planning', value: 78 },
+        ],
+        meta: [
+          { label: 'Department', value: 'Second Generation Team' },
+          { label: 'Since', value: '2026' },
+          { label: 'Focus', value: 'Leadership & Coordination' },
+          { label: 'Status', value: 'Active' },
+        ]
+      },
+      dina: {
+        id: 'HKT-015',
+        name: 'Dina Abdullah',
+        role: 'Design And Montage Team Member',
+        photo: 'dina.jpeg',
+        status: 'Active · Design',
+        bio: `Dina is a member of the Second Generation design team, developing her skills in visual design and creative production as she grows into a future design leader at HACKTIVATORS.`,
+        skills: ['Design', 'Canva', 'Creativity'],
+        skillBars: [
+          { label: 'Design', value: 70 },
+          { label: 'Creativity', value: 75 },
+        ],
+        meta: [
+          { label: 'Department', value: 'Second Generation Team' },
+          { label: 'Since', value: '2026' },
+          { label: 'Focus', value: 'Design' },
+          { label: 'Status', value: 'Active' },
+        ]
+      },
+      adam: {
+        id: 'HKT-016',
+        name: 'Adam Hussein',
+        role: 'Design And Montage Team Member',
+        photo: 'adam.jpeg',
+        status: 'Active · Design',
+        bio: `Adam is part of the Second Generation design team, learning the tools and techniques behind HACKTIVATORS' visual identity while contributing to ongoing design projects.`,
+        skills: ['Design', 'Canva', 'Creativity'],
+        skillBars: [
+          { label: 'Design', value: 68 },
+          { label: 'Creativity', value: 72 },
+        ],
+        meta: [
+          { label: 'Department', value: 'Second Generation Team' },
+          { label: 'Since', value: '2026' },
+          { label: 'Focus', value: 'Design' },
+          { label: 'Status', value: 'Active' },
+        ]
+      },
+      ibrahim: {
+        id: 'HKT-017',
+        name: 'Ibrahim Yasser',
+        role: 'Design And Montage Team Member',
+        photo: 'ibrahim.jpeg',
+        status: 'Active · Design',
+        bio: `Ibrahim is a member of the Second Generation design team, building his design skills through hands-on projects and collaboration with HACKTIVATORS' creative team.`,
+        skills: ['Design', 'Canva', 'Creativity'],
+        skillBars: [
+          { label: 'Design', value: 68 },
+          { label: 'Creativity', value: 70 },
+        ],
+        meta: [
+          { label: 'Department', value: 'Second Generation Team' },
+          { label: 'Since', value: '2026' },
+          { label: 'Focus', value: 'Design' },
+          { label: 'Status', value: 'Active' },
+        ]
+      },
+      mawadda: {
+        id: 'HKT-018',
+        name: 'Mawadda Sherif',
+        role: 'Design And Montage Team Member',
+        photo: 'mawadda.jpeg',
+        status: 'Active · Design',
+        bio: `Mawadda contributes to the Second Generation design team, developing her creative and visual design skills as part of HACKTIVATORS' next generation of talent.`,
+        skills: ['Design', 'Canva', 'Creativity'],
+        skillBars: [
+          { label: 'Design', value: 68 },
+          { label: 'Creativity', value: 70 },
+        ],
+        meta: [
+          { label: 'Department', value: 'Second Generation Team' },
+          { label: 'Since', value: '2026' },
+          { label: 'Focus', value: 'Design' },
+          { label: 'Status', value: 'Active' },
+        ]
+      },
+      tala: {
+        id: 'HKT-019',
+        name: 'Tala Ahmed',
+        role: 'Media, Photography And Communication Team Member and Programming And Management Team Member',
+        photo: 'tala.jpeg',
+        status: 'Active · Media & Programming',
+        bio: `Tala is a versatile member of the Second Generation Team, splitting her time between the media team and the programming team as she builds a broad skill set across creative and technical work.`,
+        skills: ['Media', 'Content', 'Programming', 'Problem Solving'],
+        skillBars: [
+          { label: 'Media', value: 70 },
+          { label: 'Programming', value: 65 },
+        ],
+        meta: [
+          { label: 'Department', value: 'Second Generation Team' },
+          { label: 'Since', value: '2026' },
+          { label: 'Focus', value: 'Media & Programming' },
+          { label: 'Status', value: 'Active' },
+        ]
+      },
+      youssef: {
+        id: 'HKT-020',
+        name: 'Youssef Abdullah',
+        role: 'Programming And Management Team Member and Training And Content Creation Team Member',
+        photo: 'youssef.jpeg',
+        status: 'Active · Programming & Training',
+        bio: `Youssef is part of the Second Generation Team, contributing to programming projects while also helping develop training materials and educational content for HACKTIVATORS.`,
+        skills: ['Programming', 'Training', 'Content Creation'],
+        skillBars: [
+          { label: 'Programming', value: 68 },
+          { label: 'Training & Content', value: 70 },
+        ],
+        meta: [
+          { label: 'Department', value: 'Second Generation Team' },
+          { label: 'Since', value: '2026' },
+          { label: 'Focus', value: 'Programming & Training' },
+          { label: 'Status', value: 'Active' },
+        ]
+      },
+      renad: {
+        id: 'HKT-021',
+        name: 'Renad Mohamed',
+        role: 'Programming And Management Team Member',
+        photo: 'renad.jpeg',
+        status: 'Active · Programming',
+        bio: `Renad is a member of the Second Generation Team, building her programming skills through hands-on projects as she grows into the next wave of technical talent at HACKTIVATORS.`,
+        skills: ['Programming', 'Problem Solving', 'Automation'],
+        skillBars: [
+          { label: 'Programming', value: 68 },
+          { label: 'Problem Solving', value: 70 },
+        ],
+        meta: [
+          { label: 'Department', value: 'Second Generation Team' },
+          { label: 'Since', value: '2026' },
+          { label: 'Focus', value: 'Programming' },
           { label: 'Status', value: 'Active' },
         ]
       }
